@@ -28,6 +28,6 @@ File Structure
 index.html: The main HTML structure of the application.
 style.css: Contains all styling, including responsive adjustments and custom classes.
 script.js: Contains JavaScript code to fetch weather data from the WeatherAPI and update the UI dynamically.
-License
-This project is open-source and available under the MIT License.
+
+
 
