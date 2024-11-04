@@ -3,9 +3,9 @@ const baseUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}`;
 
 document.getElementById('submit').addEventListener('click', function (event) {
     event.preventDefault();
-    const city = document.getElementById('city').value;
+    const city = document.getElementById('city').value.trim();
     if (!city) {
-        alert("Please enter a city name");
+        alert("Please enter a city name.");
         return;
     }
     fetchWeatherData(city);

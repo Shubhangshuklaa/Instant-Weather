@@ -9,26 +9,28 @@
   </head>
   <body>
     <div class="main">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-              <a class="navbar-brand fw-bold" href="#">MyWeather</a>
+              <a class="navbar-brand fw-bold" href="#">🌤️ MyWeather</a>
             </div>
         </nav>
+        
         <form class="d-flex searchcontainer" role="search">
-            <input id="city" class="form-control me-2" type="search" placeholder="Search your city" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+            <input id="city" class="form-control me-2" type="search" placeholder="Enter a city name..." aria-label="Search">
+            <button class="btn btn-primary" type="submit" id="submit">Get Weather</button>
         </form>
 
         <main class="container my-5">
-            <div class="text-center my-4 fs-1 fw-normal">Weather in <span id="cityName" class="fw-bold" style="color: rgb(14, 14, 126);"></span></div>
+            <div class="text-center my-4 fs-1 fw-normal title">Weather in <span id="cityName" class="fw-bold"></span></div>
             <div class="text-center mb-3">
                 <img id="icon" src="" alt="Weather Icon" class="weather-icon"/>
-                <div id="condition" class="fs-3 text-muted"></div>
+                <div id="condition" class="fs-4 text-muted"></div>
             </div>
+            
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
+                    <div class="card mb-4 rounded-3 shadow-sm weather-card">
+                        <div class="card-header py-3 bg-info text-white">
                             <h4 class="my-0 fw-normal">Temperature</h4>
                         </div>
                         <div class="card-body">
@@ -37,8 +39,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
+                    <div class="card mb-4 rounded-3 shadow-sm weather-card">
+                        <div class="card-header py-3 bg-info text-white">
                             <h4 class="my-0 fw-normal">Wind Speed</h4>
                         </div>
                         <div class="card-body">
@@ -47,8 +49,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
+                    <div class="card mb-4 rounded-3 shadow-sm weather-card">
+                        <div class="card-header py-3 bg-info text-white">
                             <h4 class="my-0 fw-normal">Humidity</h4>
                         </div>
                         <div class="card-body">
@@ -60,7 +62,7 @@
         </main>
 
         <footer class="text-center">
-            Made using <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a>
+            Made with ❤️ using <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a>
         </footer>
     </div>
 
